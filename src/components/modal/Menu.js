@@ -30,13 +30,12 @@ const Menu = ({ isOpen, onClose }) => {
       <Box h="3px" bg="linear-gradient(88deg, #FF9D16 0%, #2463EB 100%)" />
 
       <Flex
-        px="16px"
         mt="15px"
         justifyContent="space-between"
         align="flex-start"
         w="full"
       >
-        <Image src="/assets/header-logo.svg" w="96.67px" h="29px" />
+        <Image src="/assets/logo.svg" w="96.67px" h="29px" />
         <MdClose onClick={onClose} size="20px" />
       </Flex>
 

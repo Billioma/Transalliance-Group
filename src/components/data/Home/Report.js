@@ -40,7 +40,7 @@ const Report = () => {
         <motion.div
           style={{ width: "100%" }}
           initial={{ opacity: 0 }}
-          whileInView={{ y: [-150, 0], opacity: 1 }}
+          whileInView={{ y: [-50, 0], opacity: 1 }}
           transition={{ duration: 1, delay: 0 }}
         >
           2023 Annual Report
