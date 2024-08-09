@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gayathri:wght@100;400;700&display=swap");
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+button {
+  transition: 0.3s ease-in-out;
+}
+*:focus {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+  width: 0;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Firefox */
+/* For Firefox 64+ */
+* {
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+}
+
+/* For Firefox 63 and below */
+* {
+  scrollbar-color: transparent transparent;
+}
+
+/* Microsoft Edge and IE */
+* {
+  -ms-overflow-style: none;
+  /* Hide the scrollbar in IE and Edge */
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:after {
+  background: linear-gradient(269.18deg, #f27405 6.87%, #d3bd00 118.13%);
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.inv:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.full_width {
+  width: 100vw;
+  margin-left: calc((100% - 100vw) / 2);
+  margin-right: calc((100% - 100vw) / 2);
+}
+
+.par_btn:hover .chd_btn {
+  background-color: #122038;
+}
