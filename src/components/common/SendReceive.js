@@ -50,12 +50,12 @@ const SendReceive = () => {
           {["slide1", "slide2", "slide3", "slide4", "slide5", "slide6"].map(
             (item, i) => (
               <motion.div
+              key={i}
                 initial={{ opacity: 0 }}
                 whileInView={{ x: [150, 0], opacity: 1 }}
                 transition={{ duration: 1, delay: i * 0.3 }}
               >
                 <Image
-                  key={i}
                   src={`assets/${item}.svg`}
                   w={{ base: "100px", md: "235px" }}
                   className="inv"

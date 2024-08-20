@@ -64,7 +64,7 @@ const Contact = () => {
           pt="40px"
           pb="30px"
         >
-          <Text
+          <Box
             fontSize={{ base: "28px", md: "35px" }}
             lineHeight={{ base: "33.6px", md: "48px" }}
             color="#122038"
@@ -77,7 +77,7 @@ const Contact = () => {
             >
               Speak to Sales
             </motion.div>
-          </Text>
+          </Box>
 
           <Flex
             pl={{ base: "", md: "60px" }}
@@ -147,7 +147,7 @@ const Contact = () => {
                 style={{ width: "100%" }}
                 initial={{ opacity: 0 }}
                 whileInView={{ y: [150, 0], opacity: 1 }}
-                transition={{ duration: 1, delay: 1.5 }}
+                transition={{ duration: 1, delay: 0.5 }}
               >
                 <Flex
                   borderRadius={{ base: "10px", md: "20px" }}

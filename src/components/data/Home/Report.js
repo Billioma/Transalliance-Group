@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Image, Text } from "@chakra-ui/react";
+import { Flex, Image, Box } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 const Report = () => {
@@ -31,7 +31,7 @@ const Report = () => {
         right="0"
         bottom="0"
       />
-      <Text
+      <Box
         mt="25px"
         fontSize={{ base: "25px", md: "60px" }}
         fontFamily="Gayathri"
@@ -45,8 +45,8 @@ const Report = () => {
         >
           2023 Annual Report
         </motion.div>
-      </Text>
-      <Text
+      </Box>
+      <Box
         mt="60px"
         fontSize={{ base: "20px", md: "35px" }}
         lineHeight={{ base: "30px", md: "40px" }}
@@ -62,7 +62,7 @@ const Report = () => {
           Click below to read more about Inpay’s impressive year-on-year growth
           and to download the full report.
         </motion.div>
-      </Text>
+      </Box>
     </Flex>
   );
 };

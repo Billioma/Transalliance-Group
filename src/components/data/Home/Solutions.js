@@ -29,12 +29,13 @@ const Solutions = () => {
             >
               {services?.map((item, i) => (
                 <motion.div
+                key={i}
                   style={{ width: "100%" }}
                   initial={{ opacity: 0 }}
                   whileInView={{ y: [150, 0], opacity: 1 }}
                   transition={{ duration: 1, delay: i * 0.3 }}
                 >
-                  <Box key={i} fontWeight={500}>
+                  <Box  fontWeight={500}>
                     <Flex
                       bg="#5AAF87"
                       w={{ base: "40px", md: "60px" }}
@@ -74,7 +75,7 @@ const Solutions = () => {
           </Box>
 
           <Box w={{ base: "100%", md: "60%" }}>
-            <Text
+            <Box
               color="#122038"
               fontWeight={500}
               fontSize={{ base: "40px", md: "62px" }}
@@ -90,8 +91,8 @@ const Solutions = () => {
               >
                 The Transalliance Group. difference
               </motion.div>
-            </Text>
-            <Text
+            </Box>
+            <Box
               mt="5px"
               color="#757575"
               fontSize={{ base: "18px", md: "28px" }}
@@ -107,7 +108,7 @@ const Solutions = () => {
                 Our global payments network is powered by passionate people,
                 transparent customer relationships, and leading-edge technology.
               </motion.div>
-            </Text>
+            </Box>
 
             <Box mt={{ base: "50px", md: "120px" }}>
               <Text
@@ -145,7 +146,7 @@ const Solutions = () => {
                     />
                   </motion.div>
                   <Flex align="flex-end" display={{ base: "none", md: "flex" }}>
-                    <Text
+                    <Box
                       pt="35px"
                       pl="45px"
                       color="#122038"
@@ -161,7 +162,7 @@ const Solutions = () => {
                       >
                         Meet our best financial experts
                       </motion.div>
-                    </Text>
+                    </Box>
                     <motion.div
                       initial={{ opacity: 0 }}
                       whileInView={{ x: [150, 0], opacity: 1 }}

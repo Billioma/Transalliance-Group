@@ -16,7 +16,7 @@ const PaymentNetwork = () => {
         borderBottomRightRadius={{ base: "80px", md: "none" }}
       >
         <Flex flexDir="column" align={{ base: "flex-start", md: "flex-end" }}>
-          <Text
+          <Box
             fontWeight={500}
             fontSize={{ base: "27px", md: "48px" }}
             lineHeight={{ base: "33px", md: "58px" }}
@@ -29,8 +29,8 @@ const PaymentNetwork = () => {
             >
               The human-powered payments network
             </motion.div>
-          </Text>
-          <Text
+          </Box>
+          <Box
             my={{ base: "20px", md: "38px" }}
             fontWeight={500}
             fontSize={{ base: "16px", md: "24px" }}
@@ -46,7 +46,7 @@ const PaymentNetwork = () => {
               dedication to solving our customers' most complex cross-border
               payments challenges.
             </motion.div>
-          </Text>
+          </Box>
 
           <Box w={{ base: "100%", md: "70%" }}>
             <motion.div

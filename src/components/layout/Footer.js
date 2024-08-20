@@ -25,7 +25,7 @@ const Footer = () => {
                 objectFit="contain"
               />
             </motion.div>
-            <Text
+            <Box
               color="#0F0F0F"
               fontFamily="Gayathri"
               fontSize="20px"
@@ -38,7 +38,7 @@ const Footer = () => {
               >
                 Transalliance Group
               </motion.div>
-            </Text>
+            </Box>
           </Flex>
 
           <motion.div
@@ -89,7 +89,7 @@ const Footer = () => {
           align="flex-start"
         >
           <Box w={{ base: "100%", md: "15%" }}>
-            <Text
+            <Box
               fontWeight={500}
               fontSize={{ base: "15px", md: "22px" }}
               lineHeight={{ base: "20px", md: "29px" }}
@@ -102,8 +102,8 @@ const Footer = () => {
               >
                 Offices
               </motion.div>
-            </Text>
-            <Text
+            </Box>
+            <Box
               mt={{ base: "18px", md: "21px" }}
               fontSize={{ base: "14px", md: "18px" }}
               lineHeight={{ base: "20px", md: "24px" }}
@@ -120,11 +120,11 @@ const Footer = () => {
                 <br />
                 EC2R 8EJ, London info@inpay.com Phone: +45 88 610 600
               </motion.div>
-            </Text>
+            </Box>
           </Box>
 
           <Box>
-            <Text
+            <Box
               fontWeight={500}
               fontSize={{ base: "15px", md: "22px" }}
               lineHeight={{ base: "20px", md: "29px" }}
@@ -137,15 +137,15 @@ const Footer = () => {
               >
                 Solutions
               </motion.div>
-            </Text>
-            <Text
+            </Box>
+            <Box
               mt={{ base: "18px", md: "21px" }}
               fontSize={{ base: "14px", md: "18px" }}
               lineHeight={{ base: "20px", md: "24px" }}
               color="#OFOFOF"
             >
               {["Out", "In"].map((item, i) => (
-                <Text
+                <Box
                   mb={{ base: "10px", md: "18px" }}
                   fontWeight={500}
                   fontSize={{ base: "", md: "18px" }}
@@ -159,13 +159,13 @@ const Footer = () => {
                   >
                     Money {item}
                   </motion.div>
-                </Text>
+                </Box>
               ))}
-            </Text>
+            </Box>
           </Box>
 
           <Box>
-            <Text
+            <Box
               fontWeight={500}
               fontSize={{ base: "15px", md: "22px" }}
               lineHeight={{ base: "20px", md: "29px" }}
@@ -178,8 +178,8 @@ const Footer = () => {
               >
                 Sectors
               </motion.div>
-            </Text>
-            <Text
+            </Box>
+            <Box
               mt={{ base: "18px", md: "21px" }}
               fontSize={{ base: "14px", md: "18px" }}
               lineHeight={{ base: "20px", md: "24px" }}
@@ -187,7 +187,7 @@ const Footer = () => {
             >
               {["Financial Services", "iGaming", "Corporates", "NGOs"].map(
                 (item, i) => (
-                  <Text
+                  <Box
                     mb={{ base: "10px", md: "18px" }}
                     fontWeight={500}
                     fontSize={{ base: "", md: "18px" }}
@@ -201,14 +201,14 @@ const Footer = () => {
                     >
                       {item}
                     </motion.div>
-                  </Text>
+                  </Box>
                 ),
               )}
-            </Text>
+            </Box>
           </Box>
 
           <Box>
-            <Text
+            <Box
               fontWeight={500}
               fontSize={{ base: "15px", md: "22px" }}
               lineHeight={{ base: "20px", md: "29px" }}
@@ -221,8 +221,8 @@ const Footer = () => {
               >
                 Other
               </motion.div>
-            </Text>
-            <Text
+            </Box>
+            <Box
               mt={{ base: "18px", md: "21px" }}
               fontSize={{ base: "14px", md: "18px" }}
               lineHeight={{ base: "20px", md: "24px" }}
@@ -235,7 +235,7 @@ const Footer = () => {
                 "Careers",
                 "Contact us",
               ]?.map((item, i) => (
-                <Text
+                <Box
                   mb={{ base: "10px", md: "18px" }}
                   fontWeight={500}
                   fontSize={{ base: "", md: "18px" }}
@@ -249,9 +249,9 @@ const Footer = () => {
                   >
                     {item}
                   </motion.div>
-                </Text>
+                </Box>
               ))}
-            </Text>
+            </Box>
           </Box>
         </Flex>
       </Flex>

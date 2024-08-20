@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 const Portal = () => {
@@ -49,7 +49,7 @@ const Portal = () => {
         p={{ base: "30px 20px 25px", md: "50px 0 05px 51px" }}
         w={{ base: "", md: "40%" }}
       >
-        <Text
+        <Box
           fontWeight={500}
           fontSize={{ base: "27px", md: "44px" }}
           fontFamily="Gayathri"
@@ -64,8 +64,8 @@ const Portal = () => {
           >
             One portal, every transaction
           </motion.div>
-        </Text>
-        <Text
+        </Box>
+        <Box
           my={{ base: "20px", md: "30px" }}
           fontWeight={500}
           fontSize={{ base: "15px", md: "23px" }}
@@ -84,7 +84,7 @@ const Portal = () => {
             <br /> • Rich data analysis <br />• Multiple integration methods,
             built to suit your needs
           </motion.div>
-        </Text>
+        </Box>
       </Box>
     </Flex>
   );

@@ -8,7 +8,7 @@ const Sectors = () => {
   return (
     <Box mt={{ base: "60px", md: "150px" }}>
       <Box px={{ base: "20px", md: "185px" }}>
-        <Text
+        <Box
           fontWeight={500}
           fontSize={{ base: "30px", md: "44px" }}
           lineHeight={{ base: "40px", md: "54px" }}
@@ -23,8 +23,8 @@ const Sectors = () => {
           >
             One portal, every transaction
           </motion.div>
-        </Text>
-        <Text
+        </Box>
+        <Box
           my={{ base: "20px", md: "50px" }}
           fontSize={{ base: "18px", md: "28px" }}
           lineHeight={{ base: "286x", md: "37px" }}
@@ -41,7 +41,7 @@ const Sectors = () => {
             world’s most demanding sectors. Learn more about who we serve and
             how we add value below.
           </motion.div>
-        </Text>
+        </Box>
 
         <Flex justifyContent="center">
           <Grid
